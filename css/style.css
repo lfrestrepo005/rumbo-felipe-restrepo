@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+body {
+    margin: 0;
+    /*Esta será la fuente que estará presente en todo el cuerpo del sitio  web al estar dentro del selector body*/
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/bg-header.png);
+    background-size: cover;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#menu ul li a {
+    color: #ffffff;
+    font-size: 30px;
+    text-decoration: none;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+    padding: 8px 15px;
+}
+
+#menu ul li a:hover {
+    color: yellow;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+#hero {
+    text-align: center;
+    padding-top: 200px;
+}
+
+#hero h1 {
+    color: #e8f00c;
+    font-size: 70px;
+    margin: 0;
+}
+
+#hero h3 {
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0;
+}
+
+#hero button {
+    background: #e8f00c;
+    color: #999999;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-top: 100px;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#hero button:hover {
+    background: #ffffff;
+    border-radius: 0;
+}
+
+
+/* INICIO SECCIÓN PLANES */
+
+#planes{
+    background: #ffffff;
+    width: 100%;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 120px;
+    text-align: center;
+} 
+
+#planes h2{
+    font-size: 50px;
+}
+
+#planes p{
+    font-size: 22px;
+    margin-bottom: 70px;
+}
+
+#planes .row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#planes .row .item-planes{
+    padding: 10px;
+    position: relative;
+    transition: .4s;
+}
+
+#planes .row .item-planes img{
+    transition: .4s;
+}
+
+#planes .row .item-planes:hover img{
+    border-radius: 50%;
+} 
+
+#planes .row .item-planes:hover h3{
+    color: #ffffff;
+}
+#planes .row .item-planes:hover{
+    box-shadow: 0 0px 9px 0px #e2dada;
+}
+
+
+#planes .row .item-planes h3{
+    position: absolute;
+    top: 90px;
+    color: #e8f00c;
+    left: 0;
+    right: 0;
+    font-size: 28px;
+    transition: .4s;
+}
+
+/* INICIO SECCIÓN DESTINOS */
+
+
+#destinos{
+    width: 100%;
+    position: relative;
+    background: url(../img/bg-destinos.png);
+    padding: 100px 0 40px;
+    text-align: center;
+}
+
+#destinos .container .row{
+    display: flex;
+    justify-content: space-around;
+}
+
+#destinos h2{
+    color: #e8f00c;
+    font-size: 50px;
+}
+
+#destinos .container .row .item-destinos h3{
+    color: #ffffff;
+    font-size: 25px;
+}
+
+#destinos .container .row .item-destinos img{
+    /* Defino el tiempo de la animación que tendra el hover */
+    transition: .6s;
+}
+#destinos .container .row .item-destinos:hover img{
+    transform: rotate(-360deg);
+}
+
+/* Inicio estilos de contacto */
+
+#contacto{
+    background: #e8f00c;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+#contacto h2{
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+#contacto p{
+    font-size: 22px;
+}
+
+#contacto .container .row .campo-f{
+    width: 300px;
+    padding: 12px 14px;
+    border-radius: 4px;
+    margin: 10px 10px;
+    font-size: 20px;
+    border: 1px solid #999999;
+}
+
+#contacto .container .row select{
+    /* Código obligatorio !important */
+    width: 332px !important;
+    color: #757575;
+}
+
+#contacto .container form button{
+    background: #898d0e;
+    color: #ffffff;
+    padding: 12px 60px;
+    font-size: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 0;
+}
+
+
+/* Inicio código Footer */
+
+footer{
+    color: #fff;
+    background: #000000;
+    text-align: center;
+    padding: 60px 0 80px;
+    font-size: 22px;
+}
